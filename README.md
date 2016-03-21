@@ -16,16 +16,20 @@
 あえて、各バイナリは一つの.cファイルからのみ作成できる構成としています。
 モジュールの共通化や、コマンドラインオプションによる動作の切り替えなどは考慮していません。
 
-インストール手段は用意しておらず
+## Install
+インストール手段は用意していません。
 
 ```
-make
+$ git clone git@github.com:ohmae/CpuUsage.git
+$ cd CpuUsage
+$ make
 ```
-を実行することで、以下のバイナリが作成される。
+を実行することで、実行バイナリが作成される。
 いずれも引数はなく、実行すると5秒おきに計測結果を表示する。
 終了する場合手段も用意していないため `Ctrl-C` で強制終了を行ってください。
 
-## cpus
+## Usage
+### cpus
 CPU全体の使用率を表示する。
 ```
 $ ./cpus
@@ -36,7 +40,7 @@ $ ./cpus
 ...
 ```
 
-## cpu
+### cpu
 CPU全体に加え、マルチCPUの場合、各コアごとの使用率も表示する。
 
 ```
@@ -48,7 +52,7 @@ $ ./cpu
   1.6% (T:3989 I:3926 IO:  30 S:   9 U:  53 IRQ:   1 G:   0)  3.2%  1.6%  4.6%  1.0%  0.8%  0.6%  0.8%  0.4%
 ```
 
-## cpup
+### cpup
 CPU全体、コアごとの使用率に加え、
 プロセス情報を表示する。
 
@@ -69,7 +73,7 @@ $ ./cpup
     3  20   0 S   0.0%    0 ksoftirqd/0
 ```
 
-## cput
+### cput
 CPU全体、コアごとの使用率に加え、
 スレッド情報を表示する。
 
@@ -89,3 +93,10 @@ $ ./cput
   730   730  20   0 S   0.0%    1 irqbalance       (irqbalance)
  1098  1098  20   0 S   0.0%    1 acpid            (acpid)
 ```
+
+## Author
+大前 良介 (OHMAE Ryosuke)
+http://www.mm2d.net/
+
+## License
+[MIT License](https://github.com/ohmae/CpuUsage/blob/master/LICENSE.txt)
