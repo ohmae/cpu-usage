@@ -1,5 +1,5 @@
 # CPU使用率調査コマンド
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE)
+[![license](https://img.shields.io/github/license/ohmae/CpuUsage.svg)](./LICENSE)
 
 車輪の再発明を通じて勉強しようというコンセプトで
 「top」のようにCPU使用率を調査できるコマンド。
