@@ -1,7 +1,7 @@
 /**
  * @file cput.c
  *
- * Copyright(c) 2016 大前良介(OHMAE Ryosuke)
+ * Copyright (c) 2016 大前良介 (OHMAE Ryosuke)
  *
  * This software is released under the MIT License.
  * http://opensource.org/licenses/MIT
@@ -10,7 +10,7 @@
  *
  * CPU全体及びコアごとの使用率と上位スレッドの表示
  *
- * @author <a href="mailto:ryo@mm2d.net">大前良介(OHMAE Ryosuke)</a>
+ * @author <a href="mailto:ryo@mm2d.net">大前良介 (OHMAE Ryosuke)</a>
  * @date 2016/3/21
  */
 
